@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop Management — إدارة المحل</title>
+<meta name="description" content="برنامج إدارة محل ونقطة بيع يعمل على ويندوز. البيانات محفوظة على جهازك، مع نسخ احتياطي اختياري على Google Drive.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f8fafc;
+    --text: #0f172a;
+    --muted: #64748b;
+    --accent: #2563eb;
+    --border: #e2e8f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #60a5fa;
+      --border: #334155;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 32px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 12px; }
+  .tagline { color: var(--muted); margin: 0; font-size: 1.05rem; }
+  ul { padding-inline-start: 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 20px 0;
+  }
+  a { color: var(--accent); }
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 48px;
+    padding-top: 20px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .en { direction: ltr; text-align: left; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>إدارة المحل — Shop Management</h1>
+    <p class="tagline">برنامج نقطة بيع وإدارة مخزون يشتغل على ويندوز. بياناتك على جهازك.</p>
+  </header>
+
+  <h2>إيه اللي بيعمله</h2>
+  <ul>
+    <li>نقطة بيع بقارئ باركود، وطباعة فواتير على طابعات الإيصالات الحرارية</li>
+    <li>إدارة المنتجات والتصنيفات والأسعار والمخزون</li>
+    <li>تنبيهات نواقص المخزون</li>
+    <li>الموردين وحساباتهم، والمصاريف التشغيلية</li>
+    <li>البيع بالأجل ومتابعة مديونية العملاء</li>
+    <li>تقارير وإحصائيات شهرية</li>
+    <li>طباعة ملصقات الأسعار والباركود</li>
+    <li>حسابات مستخدمين بصلاحيات مختلفة</li>
+  </ul>
+
+  <h2>بياناتك فين</h2>
+  <div class="card">
+    <p style="margin-top:0">
+      قاعدة البيانات محفوظة <strong>على جهازك</strong> — البرنامج يشتغل من غير إنترنت، والبيع مايقفش لو النت قطع.
+    </p>
+    <p style="margin-bottom:0">
+      لو فعّلت النسخ الاحتياطي، نسخة من قاعدة البيانات بترفع على <strong>حساب Google Drive بتاعك انت</strong>.
+      البرنامج مايقدرش يشوف أي ملف تاني في الدرايف — بس الملفات اللي هو نفسه رفعها.
+      إحنا مانشوفش بياناتك ولا بنستقبلها.
+    </p>
+  </div>
+
+  <h2>المتطلبات</h2>
+  <ul>
+    <li>ويندوز 10 أو أحدث</li>
+    <li>حساب Google مجاني — اختياري، للنسخ الاحتياطي بس</li>
+  </ul>
+
+  <h2>التواصل</h2>
+  <p>
+    للدعم أو الاستفسار: <a href="mailto:ahmedfahmydev55@gmail.com">ahmedfahmydev55@gmail.com</a>
+  </p>
+
+  <hr style="border:0;border-top:1px solid var(--border);margin:44px 0">
+
+  <div class="en">
+    <h2>About (English)</h2>
+    <p>
+      Shop Management is a Windows desktop point-of-sale and inventory application for small retail
+      shops. It handles sales, barcode scanning, receipt printing, stock levels, suppliers, customer
+      credit, expenses and reporting.
+    </p>
+    <p>
+      <strong>All shop data is stored locally</strong> on the shop's own computer in a SQLite
+      database. The application works fully offline.
+    </p>
+    <p>
+      Google Drive backup is <strong>optional</strong>. When enabled, the application uploads a copy
+      of the shop's own database to <strong>the shop owner's own Google Drive account</strong>. It
+      requests only the <code>drive.file</code> scope, which grants access solely to files the
+      application itself creates. The developer has no access to any user's files or data.
+    </p>
+    <p>
+      See the <a href="privacy.html">Privacy Policy</a> for full details.
+    </p>
+    <p>
+      Contact: <a href="mailto:ahmedfahmydev55@gmail.com">ahmedfahmydev55@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>
+      <a href="privacy.html">سياسة الخصوصية / Privacy Policy</a>
+    </p>
+    <p>© 2026 Ahmed Fahmy</p>
+  </footer>
+
+</div>
+</body>
+</html>
