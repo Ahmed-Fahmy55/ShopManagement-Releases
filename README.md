@@ -12,6 +12,8 @@
 
 📘 **الدليل الكامل بالصور:** [ShopManagement-User-Guide.pdf](docs/ShopManagement-User-Guide.pdf)
 
+☁️ **ملحق النسخ الاحتياطي على Google Drive:** [ShopManagement-GoogleDrive-Backup.pdf](docs/ShopManagement-GoogleDrive-Backup.pdf)
+
 ## 💻 التشغيل لأول مرة
 
 1. البرنامج يحتاج **Windows 10 أو 11 (64-bit)**، ولا يحتاج تثبيت أو برامج إضافية.
